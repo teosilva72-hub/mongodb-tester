@@ -3,7 +3,7 @@ const Schema = require('mongoose').Schema;
 const model = require('mongoose').model;
 
 const user = new Schema({
-    nome:String,
+    name:String,
     email:String
 },{
     toJSON:{
@@ -13,4 +13,4 @@ const user = new Schema({
     }
 });
 
-module.exports = model('User');
+module.exports = model('users', user);
